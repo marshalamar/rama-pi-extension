@@ -1,0 +1,22 @@
+{
+  "name": "rama-pi-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "RAMA as a Pi extension: local music memory, Netease snapshot tools, RYM lookup, and proactive session prompts.",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "skills": [
+      "./skills/rama-music-agent/SKILL.md"
+    ]
+  },
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "typescript": "^5.7.2"
+  }
+}
