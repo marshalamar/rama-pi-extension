@@ -7,13 +7,39 @@ RAMA as a native Pi extension. This first version is intentionally small:
 - exposes tools for recent listening, memory updates, in-session Netease watcher status, and RYM lookup
 - runs a session-local proactive scheduler that can inject a short music check-in when listening data changes
 
-## Run
+## Install
 
-From the `rama` repo:
+Install from GitHub:
 
 ```bash
-pi -e ./rama-pi-extension/index.ts
+pi install https://github.com/marshalamar/rama-pi-extension
 ```
+
+If Pi is already running, use `/reload` after installing.
+
+Then start Pi normally:
+
+```bash
+pi
+```
+
+## Try Without Installing
+
+Run the extension once from GitHub:
+
+```bash
+pi -e https://github.com/marshalamar/rama-pi-extension
+```
+
+Or run a local checkout:
+
+```bash
+git clone https://github.com/marshalamar/rama-pi-extension
+cd rama-pi-extension
+pi -e ./index.ts
+```
+
+## Commands
 
 Inside Pi:
 
